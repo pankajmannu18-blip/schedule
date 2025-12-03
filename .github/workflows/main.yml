@@ -1,0 +1,13 @@
+name: schedule job
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  run-script:
+    run-on: ubuntu-latest
+
+    steps:
+      -name: print massage
+        run:"schedule"
