@@ -2,12 +2,12 @@ name: schedule job
 
 on:
   schedule:
-    - cron: "43 14 * * *"
+    - cron: "46 14 * * *"
 
 jobs:
   run-script:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
-      -name: print massage
+      - name: print massage
         run:"schedule"
